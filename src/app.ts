@@ -21,7 +21,7 @@ const swaggerOptions = {
 }
 
 //const swaggerDocs = swaggerJSDoc(swaggerOptions);
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerOutput))//swaggerUi.setup(swaggerDocs, { explorer: true }))
+app.use("/docs", ...swaggerUi.serve, swaggerUi.setup(swaggerOutput))//swaggerUi.setup(swaggerDocs, { explorer: true }))
 
 //settings
 app.set("port", process.env.PORT || 3001)

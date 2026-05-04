@@ -13,8 +13,8 @@ ENV DITTO_PASSWORD_DEVOPS=
 WORKDIR /usr/src/app
 
 # Install dependencies
-COPY package*.json ./
-RUN yarn install
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
 # Copy source
 COPY . .
