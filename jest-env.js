@@ -1,0 +1,10 @@
+process.env.ENV='development'
+process.env.HOST='localhost'
+process.env.PORT=3001
+process.env.MONGO_URI_POLICIES=''
+process.env.DITTO_URI_THINGS='http://research.adabyron.uma.es:8047'
+process.env.DITTO_USERNAME_API='ditto'
+process.env.DITTO_PASSWORD_API='ditto'
+process.env.DITTO_USERNAME_DEVOPS='devops'
+process.env.DITTO_PASSWORD_DEVOPS='foobar'
+process.env.ALL_LOGS=true
